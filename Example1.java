@@ -1,12 +1,23 @@
-package ForLoopStatement;
+package Abstractprograms;
+
+abstract class A{         //using Inheritance
+	abstract void method();
+}
+class B extends A{
+
+	@Override
+	void method() {
+		System.out.println("Abstract method implemented");
+	}
+	
+}
 
 public class Example1 {
 
 	public static void main(String[] args) {
-		int i;
-		for(i=0; i<=5; i++)
-			System.out.println(i);
-
+		// TODO Auto-generated method stub
+		B ob =  new B();
+		ob.method();
 	}
 
 }
