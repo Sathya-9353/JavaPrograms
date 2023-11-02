@@ -1,22 +1,19 @@
-package inheritanceprogram;
+package Threadprogram;
 
-//Single Parent
-class Parent {
-	public void Properties() {
-		System.out.println("Parent Parent");
+class  Mythread extends Thread{
+	public void run() {
+		for(int i=0; i<=5; i++) {
+			System.out.println(i);
+		}
 	}
 }
-class child extends Parent {
-	public void details() {
-		System.out.println("Child details with parent properties");
-	}
-}
-public class Demo {
+
+public class Demo extends Thread {
 
 	public static void main(String[] args) {
-		child c= new child();
-		c.Properties();
-		c.details();
+		// TODO Auto-generated method stub
+		Mythread m=new Mythread();
+		m.start();
 
 	}
 
